@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV JA'FAR SURYADI</title>
+    <style>
+        /* Reset dan Styling Dasar */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        /* Header dengan Foto */
+        .header {
+            background: #2c3e50;
+            color: white;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .profile-picture {
+            width: 250px;
+            height: 250px;
+            border-radius: 100%;
+            object-fit: cover;
+            object-position: center 15%;
+            border: 4px solid white;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .header-text {
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 5px;
+        }
+        
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        /* Bagian Utama */
+        .main {
+            display: flex;
+        }
+        
+        .sidebar {
+            flex: 1;
+            background: #34495e;
+            color: white;
+            padding: 30px;
+        }
+        
+        .content {
+            flex: 2;
+            padding: 30px;
+        }
+        
+        /* Bagian Umum */
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section-title {
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            color: #2c3e50;
+            text-transform: uppercase;
+            font-size: 1.2em;
+            letter-spacing: 1px;
+        }
+        
+        .sidebar .section-title {
+            color: white;
+            border-bottom: 2px solid #3498db;
+        }
+        
+        /* Info Kontak */
+        .contact-info {
+            margin-bottom: 30px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .contact-item i {
+            margin-right: 10px;
+            color: #3498db;
+            width: 20px;
+            text-align: center;
+        }
+        
+        /* Skill */
+        .skill {
+            margin-bottom: 15px;
+        }
+        
+        .skill-name {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        .skill-bar {
+            height: 10px;
+            background: #ecf0f1;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        
+        .skill-level {
+            height: 100%;
+            background: #3498db;
+        }
+        
+        /* Pengalaman Kerja */
+        .job {
+            margin-bottom: 25px;
+        }
+        
+        .job-title {
+            font-weight: bold;
+            font-size: 1.1em;
+            color: #2c3e50;
+        }
+        
+        .job-company {
+            font-weight: bold;
+            color: #3498db;
+        }
+        
+        .job-date {
+            color: #7f8c8d;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+        
+        .job-description {
+            margin-top: 10px;
+        }
+        
+        /* Pendidikan */
+        .education {
+            margin-bottom: 20px;
+        }
+        
+        .education-degree {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .education-school {
+            font-weight: bold;
+            color: #3498db;
+        }
+        
+        .education-date {
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+        
+        /* Responsif */
+        @media (max-width: 768px) {
+            .main {
+                flex-direction: column;
+            }
+            
+            .sidebar {
+                order: 2;
+            }
+            
+            .header {
+                padding: 20px;
+            }
+            
+            .profile-picture {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <!-- Foto Profil -->
+            <img src="gambar1.jpg" alt="Foto Profil" class="profile-picture">
+            
+            <!-- Teks Header -->
+            <div class="header-text">
+                <h1>Ja'far Suryadi</h1>
+                <p>Mahasiswa S1 Teknik Informatika | Telkom University Purwokerto</p>
+            </div>
+        </div>
+        
+        <div class="main">
+            <div class="sidebar">
+                <div class="section">
+                    <h2 class="section-title">Kontak</h2>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i>📱</i>
+                            <span>+62 877-5501-6128</span>
+                        </div>
+                        <div class="contact-item">
+                            <i>✉️</i>
+                            <span>jafarsuryadi36@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i>🏠</i>
+                            <span>Wanasaba, Lombok Timur,Nusa Tenggara Barat, Indonesia</span>
+                        </div>
+                        <div class="contact-item">
+                            <i>🔗</i>
+                            <span>
+                                <a href="https://www.linkedin.com/in/ja-far-suryadi-5b5930308?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" style="color: white; text-decoration: none;">
+                                    linkedin.com/in/JA'FAR SURYADI
+                                </a>
+                            </span>
+                        </div>
+                        <div class="contact-item">
+                            <i>💻</i>
+                            <span>
+                                <a href="s" target="_blank" style="color: white; text-decoration: none;">
+                                    github.com/SuryaSkuy
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h2 class="section-title">Keahlian</h2>
+                    <div class="skill">
+                        <div class="skill-name">HTML/CSS</div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">Java</div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">Python</div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">Golang</div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">C++</div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">Desain Mikrokontroler</div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">Pemerograman Arduino</div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">Microsoft Office (Word, Exel, dan Power Point)</div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">Komunikasi</div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h2 class="section-title">Bahasa</h2>
+                    <div class="skill">
+                        <div class="skill-name">Bahasa Indonesia</div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 100%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">Bahasa Inggris</div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content">
+                <div class="section">
+                    <h2 class="section-title">Profil</h2>
+                    <p style="text-align: justify;"> Mahasiswa Teknik Informatika semester 4 di Telkom University Purwokerto dengan spesialisasi 
+        dalam pengembangan Internet of Things (IoT) dan kecerdasan buatan. Memiliki pengalaman 
+        dalam membangun prototipe sistem IoT berbasis Arduino/Raspberry Pi dan mengembangkan 
+        model machine learning sederhana untuk klasifikasi data. Aktif sebagai anggota aktif 
+        UKM Robocoom (Robotics and Computer Community) dengan kontribusi dalam kompetisi 
+        robotics tingkat regional. Memiliki kemampuan pemrograman Python, C++, dan embedded systems 
+        dengan semangat kuat untuk pengembangan produk IoT yang inovatif. Memiliki IPK 3.79 dengan beberapa matakuliah meraih nilai A.
+                    </p>
+                </div>
+                
+                <div class="section">
+                    <h2 class="section-title">Pengalaman Organisasi</h2>
+                    <div class="job">
+                        <div class="job-title">Robocoom</div>
+                        <div class="job-company">Telkom University Purwokerto</div>
+                        <div class="job-date">Januari 2025 - Sekarang</div>
+                        <div class="job-description">
+                            <ul>
+                                <li>Meningkatkan skill Desain dan Pemerograman Mikrokontroler (Arduino)</li>
+                                <li>Membuat robot penghindar halangan "Obstacle Avoider"</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="job">
+                        <div class="job-title">Pramuka</div>
+                        <div class="job-company">SMA Negeri 1 Aikmel</div>
+                        <div class="job-date">November 2020 - Desember 2022</div>
+                        <div class="job-description">
+                            <ul>
+                                <li>Menjadi sekretaris 2 priode</li>
+                                <li>Menjadi pemangku adat 1 priode</li>
+                                <li>Mengikuti lomba beraksi I</li>
+                                <li>Mengiikuti KSLP3-XI</li>
+                                <li>Panitia plantikan anggota baru</li>
+                                <li>Membantu melatih pramuka penggalang tingkat SD dan SMP</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="job">
+                        <div class="job-title">Osis</div>
+                        <div class="job-company">SMA Negeri 1 Aikmel</div>
+                        <div class="job-date">Januari 2021 - Juni 2021</div>
+                        <div class="job-description">
+                            <ul>
+                                <li>Panitia acara ulang tahun sekolah</li>
+                                <li>Panitia acara perpisahan sekolah</li>
+                                <li>Divisi Imtaq</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="job">
+                        <div class="job-title">KIR</div>
+                        <div class="job-company">SMA Negeri 1 Aikmel</div>
+                        <div class="job-date">Mei 2021 - Januari 2023</div>
+                        <div class="job-description">
+                            <ul>
+                                <li>Semifinalis EPSILON 2021</li>
+                                <li>Peserta HK EXPERTALK Essay competition 2022</li>
+                                <li>Juara 1 LKTI tingkat Sekolah SMA Negeri 1 Aikmel</li>
+                                <li>Lolos Kihajar Stem tahap basic 2022</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h2 class="section-title">Pendidikan</h2>
+                    <div class="education">
+                        <div class="education-degree">Sarjana Teknik Informatika</div>
+                        <div class="education-school">Telkom University Purwokerto</div>
+                        <div class="education-date">2023 - Sekarang</div>
+                    </div>
+                    <div class="education">
+                        <div class="education-degree">SMA IPA</div>
+                        <div class="education-school">SMA Negeri 1 Aikmel</div>
+                        <div class="education-date">2020 - 2023</div>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h2 class="section-title">Proyek</h2>
+                    <div class="job">
+                        <div class="job-title">Obstacle Avoider</div>
+                        <div class="job-date">2025</div>
+                        <div class="job-description">
+                            <p>Robot penghindar halangan "Obstacle Avoider" menggunakan Arduino Uno dengan sensor Ultrasonik.</p>
+                        </div>
+                    </div>
+                    <div class="job">
+                        <div class="job-title">Model AI Emisi karbon</div>
+                        <div class="job-date">2025</div>
+                        <div class="job-description">
+                            <p>Membuat model Ai untuk mengetahui emisi carbon disuatu wilayah dengan menggunakan algoritma Random Forest dan XGBoost.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
